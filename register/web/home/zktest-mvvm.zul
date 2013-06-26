@@ -1,4 +1,4 @@
-<zk xmlns="http://www.zkoss.org/2005/zul" xmlns:ace="http://www.icefaces.org/icefaces/components">
+<zk xmlns="http://www.zkoss.org/2005/zul">
 
 <borderlayout height="725px">
     <north size="6%">
@@ -229,32 +229,32 @@
                                             Venue:
                                             <label value="@load(tvm.selectedTournament.venue)" />
                                         </div>
+                                        <button label="Register"/>
                                     </div>
                                 </window>
                             </hlayout>
                             <grid>
                                 <auxhead>
-                                    <auxheader colspan="5" class="topic">Edit Tournament</auxheader>
+                                    <auxheader colspan="5" class="topic">Tournament History</auxheader>
                                 </auxhead>
                                 <columns>
                                     <column label="Title" align="center" />
                                     <column label="Venue" align="center" />
-                                    <column label="Start Date" align="center" />
-                                    <column label="End Date" align="center" />
-                                    <column label="Registration Fee" align="center" />
-                                    <column label="MA School" align="center" />
-                                    <column label="Delete" align="center" />
+                                    <column label="Date" align="center" />
+                                    <column label="Results" align="center" />
                                 </columns>
                                 <rows>
                                     <row>
-                                        <textbox value="@bind(tvm.selectedTournament.name)" width="95%" />
-                                        <textbox value="@bind(tvm.selectedTournament.venue)" width="95%" />
-                                        <datebox value="@bind(tvm.selectedTournament.startDate)" width="105px" />
-                                        <datebox value="@bind(tvm.selectedTournament.endDate)" width="105px" />
-                                        <textbox value="@bind(tvm.selectedTournament.registrationFee)" />
-                                        <textbox value="@bind(tvm.selectedTournament.maSchool)" />
-                                        <button label="Delete" onClick="@command('deleteTournament')"
-                                                disabled="@load(tvm.stateAddTournament)" />
+                                        <label value="Fighting Lion"></label>
+                                        <label value="Central Florida Chrysler Jeep Dodge"></label>
+                                        <label value="12/08/2012"></label>
+                                        <label value=""></label>
+                                    </row>
+                                    <row>
+                                        <label value="Terracotta Challenge"></label>
+                                        <label value="Northland Church"></label>
+                                        <label value="04/20/2013"></label>
+                                        <label value=""></label>
                                     </row>
                                 </rows>
                             </grid>
@@ -262,9 +262,7 @@
                     </panel>
                     <panel>
                         <panelchildren>
-                            <button onClick="@command('addTournamentForm')" label="Add Tournament" disabled="@load(tvm.stateAddTournament)"/>
-                            <button onClick="@command('saveNewTournament')" label="Save" visible="@load(tvm.stateAddTournament)"/>
-                            <button onClick="@command('reloadTournament')" label="Cancel" visible="@load(cvm.stateAddTournament)"/>
+
                         </panelchildren>
                     </panel>
                 </tabpanel>
