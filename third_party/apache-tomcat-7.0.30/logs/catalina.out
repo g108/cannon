@@ -1,0 +1,241 @@
+May 16, 2013 10:28:24 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+May 16, 2013 10:28:24 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+May 16, 2013 10:28:25 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+May 16, 2013 10:28:25 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1446 ms
+May 16, 2013 10:28:25 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+May 16, 2013 10:28:25 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+May 16, 2013 10:28:25 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /data/devl/apache-tomcat-7.0.30/webapps/sample.war
+May 16, 2013 10:28:26 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+May 16, 2013 10:28:26 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+May 16, 2013 10:28:26 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1008 ms
+2013-05-20 08:35:21.659 java[2397:11807] Connection with distnoted server was invalidated
+May 20, 2013 8:35:41 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+May 20, 2013 8:35:42 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+May 20, 2013 8:35:42 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+May 20, 2013 8:35:42 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+May 20, 2013 8:35:42 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+May 20, 2013 8:35:42 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+May 20, 2013 8:35:42 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jun 12, 2013 12:46:51 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Jun 12, 2013 12:46:51 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 12, 2013 12:46:51 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jun 12, 2013 12:46:51 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1097 ms
+Jun 12, 2013 12:46:51 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 12, 2013 12:46:51 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+Jun 12, 2013 12:46:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /data/devl/apache-tomcat-7.0.30/webapps/register.war
+Jun 12, 2013 12:46:52 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/data/devl/apache-tomcat-7.0.30/webapps/register/WEB-INF/lib/el-api.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/el/Expression.class
+Jun 12, 2013 12:46:52 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/data/devl/apache-tomcat-7.0.30/webapps/register/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Jun 12, 2013 12:46:52 PM org.apache.tomcat.util.digester.Digester endElement
+SEVERE: End event threw exception
+java.lang.NoSuchMethodException: org.apache.catalina.deploy.WebXml addServlet
+	at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:855)
+	at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:201)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1051)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1537)
+	at org.apache.catalina.startup.ContextConfig.parseWebXml(ContextConfig.java:1875)
+	at org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment(ContextConfig.java:1472)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1250)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:878)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5173)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Jun 12, 2013 12:46:52 PM org.apache.catalina.startup.ContextConfig parseWebXml
+SEVERE: Parse error in application web.xml file at file:/data/devl/apache-tomcat-7.0.30/conf/web.xml
+java.lang.NoSuchMethodException: org.apache.catalina.deploy.WebXml addServlet
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:2687)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:2719)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1054)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1537)
+	at org.apache.catalina.startup.ContextConfig.parseWebXml(ContextConfig.java:1875)
+	at org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment(ContextConfig.java:1472)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1250)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:878)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5173)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.NoSuchMethodException: org.apache.catalina.deploy.WebXml addServlet
+	at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:855)
+	at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:201)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1051)
+	... 31 more
+Jun 12, 2013 12:46:52 PM org.apache.catalina.startup.ContextConfig parseWebXml
+SEVERE: Occurred at line 108 column 15
+Jun 12, 2013 12:46:52 PM org.apache.tomcat.util.digester.Digester endElement
+SEVERE: End event threw exception
+java.lang.NoSuchMethodException: org.apache.catalina.deploy.WebXml addServlet
+	at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:855)
+	at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:201)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1051)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1537)
+	at org.apache.catalina.startup.ContextConfig.parseWebXml(ContextConfig.java:1875)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1256)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:878)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5173)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Jun 12, 2013 12:46:52 PM org.apache.catalina.startup.ContextConfig parseWebXml
+SEVERE: Parse error in application web.xml file at jndi:/localhost/register/WEB-INF/web.xml
+java.lang.NoSuchMethodException: org.apache.catalina.deploy.WebXml addServlet
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:2687)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:2719)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1054)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1537)
+	at org.apache.catalina.startup.ContextConfig.parseWebXml(ContextConfig.java:1875)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1256)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:878)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5173)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.NoSuchMethodException: org.apache.catalina.deploy.WebXml addServlet
+	at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:855)
+	at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:201)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1051)
+	... 30 more
+Jun 12, 2013 12:46:52 PM org.apache.catalina.startup.ContextConfig parseWebXml
+SEVERE: Occurred at line 10 column 15
+Jun 12, 2013 12:46:52 PM org.apache.catalina.startup.ContextConfig configureStart
+SEVERE: Marking this application unavailable due to previous error(s)
+Jun 12, 2013 12:46:52 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Jun 12, 2013 12:46:52 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/register] startup failed due to previous errors
+Jun 12, 2013 12:46:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 12, 2013 12:46:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jun 12, 2013 12:46:52 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1002 ms
+Jun 12, 2013 12:48:00 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jun 12, 2013 12:48:00 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jun 12, 2013 12:48:00 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jun 12, 2013 12:48:00 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jun 12, 2013 12:48:00 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jun 12, 2013 12:48:00 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jun 12, 2013 12:48:00 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jun 12, 2013 12:48:00 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
