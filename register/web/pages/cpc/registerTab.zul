@@ -33,7 +33,7 @@
                             Venue:
                             <label value="@load(vm.selectedTournament.venue)" />
                         </div>
-                        <button label="Register"/>
+                        <button onClick="@command('testStripePayment')" label="Register"/>
                     </div>
                 </window>
             </hlayout>
