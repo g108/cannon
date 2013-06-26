@@ -1,0 +1,59 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel sclass="cardSys" border="none">
+        <panelchildren>
+            <hlayout spacing="0" height="400px">
+                <listbox vflex="true" hflex="1"
+                         model="@load(vm.tournaments)" selectedItem="@bind(vm.selectedTournament)">
+                    <auxhead>
+                        <auxheader colspan="2">Tournament List</auxheader>
+                    </auxhead>
+                    <listhead>
+                        <listheader label="Title" width="200px" align="center" />
+                        <listheader label="Venue" align="center" />
+                        <listheader label="Start Date" width="120px" align="center" />
+                    </listhead>
+                    <template name="model" var="tournament">
+                        <listitem disabled="@load(vm.stateAddTournament)">
+                            <listcell label="@load(tournament.name)" />
+                            <listcell label="@load(tournament.venue)" />
+                            <listcell label="@load(tournament.startDate)" />
+                        </listitem>
+                    </template>
+                </listbox>
+                <window sclass="card-pre" title="Tournament Card" hflex="1" vflex="true" border="normal">
+                    <div sclass="card" align="center">
+                        <image sclass="logo" src="/images/logo.jpg" width="500px"/>
+                        <vlayout sclass="title">
+                            <label sclass="name" value="@load(vm.selectedTournament.name)" />
+                            <hlayout sclass="dept">
+                                Tournament
+                            </hlayout>
+                        </vlayout>
+                        <div sclass="number">
+                            Venue:
+                            <label value="@load(vm.selectedTournament.venue)" />
+                        </div>
+                        <button label="Register"/>
+                    </div>
+                </window>
+            </hlayout>
+        </panelchildren>
+    </panel>
+    <panel>
+        <panelchildren>
+            <listbox vflex="true" hflex="1">
+                <auxhead>
+                    <auxheader colspan="3">Registered Competitors</auxheader>
+                </auxhead>
+                <listhead>
+                    <listheader label="Name" width="200px" align="center" />
+                    <listheader label="Belt Rank" width="200px" align="center" />
+                    <listheader label="Divisions" align="center" />
+                </listhead>
+                <template name="model" var="competitors">
+
+                </template>
+            </listbox>
+        </panelchildren>
+    </panel>
+</zk>

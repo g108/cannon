@@ -1,0 +1,74 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel sclass="cardSys" border="none">
+        <panelchildren>
+            <hlayout spacing="0" height="400px">
+                <listbox id="competitorListBox" sclass="competitor-list" vflex="true" hflex="1"
+                         model="@load(vm.competitors)" selectedItem="@bind(vm.selectedCompetitor)">
+                    <auxhead>
+                        <auxheader colspan="2">Competitor List</auxheader>
+                    </auxhead>
+                    <listhead>
+                        <listheader label="Belt Rank" width="120px" align="center" />
+                        <listheader label="Full Name" align="center" />
+                        <listheader label="Date of Birth" width="200px" align="center" />
+                    </listhead>
+                    <template name="model" var="competitor">
+                        <listitem disabled="@load(vm.stateAddCompetitor)">
+                            <listcell label="@load(competitor.beltRank)" />
+                            <listcell label="@load(competitor.fullName)" />
+                            <listcell label="@load(competitor.dob)" />
+                        </listitem>
+                    </template>
+                </listbox>
+                <window sclass="card-pre" title="Competitor Card" hflex="1" vflex="true" border="normal">
+                    <div sclass="card" align="center">
+                        <image sclass="logo" src="/images/logo.jpg" width="500px"/>
+                        <vlayout sclass="title">
+                            <label sclass="name" value="@load(vm.selectedCompetitor.fullName)" />
+                            <hlayout sclass="dept">
+                                Competitor
+                            </hlayout>
+                        </vlayout>
+                        <div sclass="number">
+                            Belt Rank:
+                            <label value="@load(vm.selectedCompetitor.beltRank)" />
+                        </div>
+                    </div>
+                </window>
+            </hlayout>
+            <grid>
+                <auxhead>
+                    <auxheader colspan="5" class="topic">Edit Competitor</auxheader>
+                </auxhead>
+                <columns>
+                    <column label="Belt Rank" align="center" />
+                    <column label="First Name" align="center" />
+                    <column label="Last Name" align="center" />
+                    <column label="Date of Birth" align="center" />
+                    <column label="Full Name" align="center" />
+                    <column label="Delete" align="center" />
+                </columns>
+                <rows>
+                    <row>
+                        <combobox model="@load(vm.beltRanks)"
+                                  selectedItem="@bind(vm.selectedCompetitor.beltRank)" width="99%" />
+                        <textbox value="@bind(vm.selectedCompetitor.firstName)" width="95%" />
+                        <textbox value="@bind(vm.selectedCompetitor.lastName)" width="95%" />
+                        <datebox value="@bind(vm.selectedCompetitor.dob)" width="105px" />
+                        <label value="@load(vm.selectedCompetitor.fullName)" />
+                        <button label="Delete" onClick="@command('deleteCompetitor')"
+                                disabled="@load(vm.stateAddCompetitor)" />
+                    </row>
+                </rows>
+            </grid>
+        </panelchildren>
+    </panel>
+
+    <panel>
+        <panelchildren>
+            <button onClick="@command('addCompetitorForm')" label="Add Competitor" disabled="@load(vm.stateAddCompetitor)"/>
+            <button onClick="@command('saveNewCompetitor')" label="Save" visible="@load(vm.stateAddCompetitor)"/>
+            <button onClick="@command('reloadCompetitor')" label="Cancel" visible="@load(vm.stateAddCompetitor)"/>
+        </panelchildren>
+    </panel>
+</zk>

@@ -1,3 +1,3 @@
 <window title="You now have only one choice!" border="normal">
-    <a href="home/zktest-mvvm.zul">ZKoss MVVM page</a>
+    <a href="pages/cpc/main.zul">ZKoss MVVM page</a>
 </window>

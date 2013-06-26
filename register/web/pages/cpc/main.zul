@@ -1,0 +1,60 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+
+<borderlayout height="725px">
+    <north size="6%">
+            <borderlayout height="50px" >
+                <west vflex="1" border="none">
+                    <image src="/images/logo.jpg" width="100px"/>
+                </west>
+                <center border="none" style="background:#008db7;color:white;">
+                    <hbox align="center" width="100%">
+                        <label value="CEG Registration Application" style="font-size:30px;font-family:Garamond"/>
+                    </hbox>
+                </center>
+                <east vflex="1" border="none" style="background:#008db7;color:white;">
+                    <vbox align="right">
+                        <hlayout>
+                            <label value="Lance Cash" style="font-weight:bold;"/><label value=" is logged in"/>
+                        </hlayout>
+                        <a href="">Logout</a>
+                    </vbox>
+                </east>
+            </borderlayout>
+
+    </north>
+    <center autoscroll="true">
+        <tabbox vflex="1" orient="vertical">
+            <tabs id="tabs" width="100px">
+                <tab id="profile" label="Profile"/>
+                <tab id="competitors" label="Competitors"/>
+                <tab id="register" label="Register"/>
+                <tab id="history" label="History"/>
+            </tabs>
+            <tabpanels>
+                <tabpanel apply="org.zkoss.bind.BindComposer"
+                          viewModel="@id('vm') @init('cannon.register.mvvm.PersonalViewModel')">
+                    <include src="/pages/cpc/profileTab.zul"/>
+                </tabpanel>
+                <tabpanel apply="org.zkoss.bind.BindComposer"
+                          viewModel="@id('vm') @init('cannon.register.mvvm.CompetitorViewModel')">
+                    <include src="/pages/cpc/competitorsTab.zul"/>
+                </tabpanel>
+                <tabpanel apply="org.zkoss.bind.BindComposer"
+                          viewModel="@id('vm') @init('cannon.register.mvvm.TournamentViewModel')">
+                    <include src="/pages/cpc/registerTab.zul"/>
+                </tabpanel>
+                <tabpanel>
+                    <include src="/pages/cpc/historyTab.zul"/>
+                </tabpanel>
+            </tabpanels>
+        </tabbox>    </center>
+    <south>
+            <vbox align="center" hflex="1" style="background:#112f37;">
+                <hlayout>
+                    <button label="Save" width="100px"/>
+                    <button label="Cancel" width="100px"/>
+                </hlayout>
+            </vbox>
+    </south>
+</borderlayout>
+</zk>

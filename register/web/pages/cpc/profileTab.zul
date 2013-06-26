@@ -1,0 +1,86 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <grid width="400px">
+        <rows>
+            <row>
+                <label value="First Name" width="150px"/>
+                <textbox value="@bind(vm.user.firstName)" constraint="no empty" width="150px"/>
+            </row>
+            <row>
+                <label value="Last Name" width="150px"/>
+                <textbox value="@bind(vm.user.lastName)" constraint="no empty" width="150px"/>
+            </row>
+            <row>
+                <label value="DOB" width="150px"/>
+                <datebox value="@bind(vm.user.dob)" format="MM/dd/yyyy" constraint="no future" width="150px"/>
+            </row>
+            <row spans="2">
+                <panel title="Home Address" height="100%" width="380px">
+                    <panelchildren>
+                        <grid>
+                            <rows>
+                                <row>
+                                    <label value="Street" width="150px"/>
+                                    <textbox value="@bind(vm.user.homeStreet)" constraint="no empty" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="Apt/Suite" width="150px"/>
+                                    <textbox value="@bind(vm.user.homeAptSuite)" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="City" width="150px"/>
+                                    <textbox value="@bind(vm.user.homeCity)" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="State" width="150px"/>
+                                    <textbox value="@bind(vm.user.homeState)" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="Zip" width="150px"/>
+                                    <textbox value="@bind(vm.user.homeZip)" constraint="no empty" width="150px"/>
+                                </row>
+                                <row spans="2">
+                                    <checkbox checked="@bind(vm.user.homeSameAsBilling)"
+                                              label="Home Address same as Billing Address"/>
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </row>
+            <row spans="2">
+                <panel visible="@load(!vm.user.homeSameAsBilling)" title="Billing Address" height="100%" width="380px">
+                    <panelchildren>
+                        <grid>
+                            <rows>
+                                <row>
+                                    <label value="Name" width="150px"/>
+                                    <textbox value="" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="Street" width="150px"/>
+                                    <textbox value="" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="Apt/Suite" width="150px"/>
+                                    <textbox value="" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="City" width="150px"/>
+                                    <textbox value="" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="State" width="150px"/>
+                                    <textbox value="" width="150px"/>
+                                </row>
+                                <row>
+                                    <label value="Zip" width="150px"/>
+                                    <textbox value="" width="150px"/>
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </row>
+        </rows>
+    </grid>
+</zk>
