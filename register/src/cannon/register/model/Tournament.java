@@ -1,7 +1,6 @@
 package cannon.register.model;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,6 +21,7 @@ public class Tournament {
 //    private List<TournamentOrganizer> tournamentOrganizers;
 //    private List<Division> divisions;
     private String circuit;
+    private String logoPath;
 
     public Tournament() {
         new Tournament("", "");
@@ -32,6 +32,12 @@ public class Tournament {
     public Tournament(String name, String venue) {
         this.name = name;
         this.venue = venue;
+    }
+
+    public Tournament(String name, String venue, String logoPath) {
+        this.name = name;
+        this.venue = venue;
+        this.logoPath = logoPath;
     }
 
     public String getName() {
@@ -96,5 +102,13 @@ public class Tournament {
 
     public void setCircuit(String circuit) {
         this.circuit = circuit;
+    }
+
+    public String getLogoPath() {
+        return logoPath;
+    }
+
+    public void setLogoPath(String logoPath) {
+        this.logoPath = logoPath;
     }
 }

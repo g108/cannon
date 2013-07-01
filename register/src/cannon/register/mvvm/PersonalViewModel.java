@@ -2,13 +2,7 @@ package cannon.register.mvvm;
 
 import cannon.register.model.User;
 import cannon.register.service.UserService;
-import org.zkoss.bind.annotation.AfterCompose;
-import org.zkoss.bind.annotation.ContextParam;
-import org.zkoss.bind.annotation.ContextType;
 import org.zkoss.bind.annotation.Init;
-import org.zkoss.zk.ui.Component;
-import org.zkoss.zk.ui.select.Selectors;
-import org.zkoss.zul.Checkbox;
 
 
 /**
@@ -23,7 +17,7 @@ public class PersonalViewModel {
 
     @Init
     public void init() {
-        user = UserService.getUser("Cash");
+        user = UserService.login("lnac98@gmail.com");
     }
 
     public User getUser() {

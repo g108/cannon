@@ -13,6 +13,7 @@ public class User {
     private String firstName;
     private String lastName;
     private Date dob;
+    private String email;
     private String homeStreet;
     private String homeAptSuite;
     private String homeCity;
@@ -26,11 +27,12 @@ public class User {
     private String billingState;
     private String billingZip;
 
-    public User(String firstName, String lastName, Date dob, String homeStreet, String homeAptSuite, String homeCity,
+    public User(String firstName, String lastName, Date dob, String email, String homeStreet, String homeAptSuite, String homeCity,
                 String homeState, String homeZip, boolean homeSameAsBilling) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
+        this.email = email;
         this.homeStreet = homeStreet;
         this.homeAptSuite = homeAptSuite;
         this.homeCity = homeCity;
@@ -61,6 +63,14 @@ public class User {
 
     public void setDob(Date dob) {
         this.dob = dob;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getHomeStreet() {

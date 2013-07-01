@@ -1,0 +1,15 @@
+<zk xmlns="http://www.zkoss.org/2005/zul" >
+    <vbox align="center" hflex="1">
+        <hbox align="center">
+            <label value="Select Competitor:"/>
+            <combobox model="@load(vm.myCompetitors)" mold="rounded">
+                <template name="model">
+                    <comboitem label="@load(each.fullName)"/>
+                </template>
+            </combobox>
+        </hbox>
+        <hlayout>
+            <button label="Cancel" onClick="@command('cancelRegistration')" width="100px"/>
+        </hlayout>
+    </vbox>
+</zk>

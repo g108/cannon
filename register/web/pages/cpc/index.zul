@@ -1,0 +1,5 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/pages/common/template.zul"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <include self="@define(content)" src="/pages/cpc/main.zul"/>
+</zk>

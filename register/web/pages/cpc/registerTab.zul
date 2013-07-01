@@ -1,3 +1,4 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
 <zk xmlns="http://www.zkoss.org/2005/zul">
     <panel sclass="cardSys" border="none">
         <panelchildren>
@@ -22,18 +23,36 @@
                 </listbox>
                 <window sclass="card-pre" title="Tournament Card" hflex="1" vflex="true" border="normal">
                     <div sclass="card" align="center">
-                        <image sclass="logo" src="/images/logo.jpg" width="500px"/>
-                        <vlayout sclass="title">
-                            <label sclass="name" value="@load(vm.selectedTournament.name)" />
-                            <hlayout sclass="dept">
-                                Tournament
-                            </hlayout>
-                        </vlayout>
+                        <image sclass="logo" src="@load(vm.selectedTournament.logoPath)" height="280px"/>
+                        <hbox id="mylogo" visible="false" width="600"><image src="@load(vm.selectedTournament.logoPath)"/></hbox>
+                        <!--<vlayout sclass="title">-->
+                            <!--<label value="text1: " />-->
+                            <!--<textbox-->
+                                    <!--c:onFocus="jq(this.$f('help1')).fadeIn()"-->
+                                    <!--c:onBlur="jq(this.$f('help1')).fadeOut()"/>-->
+                            <!--<label id="help1" visible="false"-->
+                                   <!--value="This is help for text1." />-->
+                            <!--<label sclass="name" value="@load(vm.selectedTournament.name)" />-->
+                            <!--<hlayout sclass="dept">-->
+                                <!--Tournament-->
+                            <!--</hlayout>-->
+                        <!--</vlayout>-->
                         <div sclass="number">
                             Venue:
-                            <label value="@load(vm.selectedTournament.venue)" />
+                            <label value="@load(vm.selectedTournament.venue)"/>
                         </div>
-                        <button onClick="@command('testStripePayment')" label="Register"/>
+                        <button label="Register" onClick="@command('startRegistration')"/>
+                        <window title="@load(vm.selectedTournament.name)" border="normal" width="360px"
+                                position="center,center" action="show: slideDown;hide: slideUp"
+                                visible="@load(vm.stateRegistering)" mode="modal">
+                            <include src="/pages/cpc/registerDialog.zul"/>
+                        </window>
+                        <button label="Test Payment" onClick="@command('startPayment')"/>
+                        <window title="@load(vm.selectedTournament.name)" border="normal" width="360px"
+                                position="center,center" action="show: slideDown;hide: slideUp"
+                                visible="@load(vm.statePaying)" mode="modal">
+                            <include src="/pages/cpc/paymentDialog.zul"/>
+                        </window>
                     </div>
                 </window>
             </hlayout>
@@ -41,7 +60,8 @@
     </panel>
     <panel>
         <panelchildren>
-            <listbox vflex="true" hflex="1">
+            <listbox vflex="true" hflex="1"
+                     model="@load(vm.registeredCompetitors)" selectedItem="@bind(vm.selectedCompetitor)">
                 <auxhead>
                     <auxheader colspan="3">Registered Competitors</auxheader>
                 </auxhead>
@@ -51,7 +71,11 @@
                     <listheader label="Divisions" align="center" />
                 </listhead>
                 <template name="model" var="competitors">
-
+                    <listitem>
+                        <listcell label="@load(competitor.fullName)" />
+                        <listcell label="@load(competitor.beltRank)" />
+                        <listcell label="@load(vm.getDivisionsForCompetitor(competitor))" />
+                    </listitem>
                 </template>
             </listbox>
         </panelchildren>

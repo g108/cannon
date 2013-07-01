@@ -18,8 +18,8 @@ public class TournamentService {
     private static List<Tournament> tournaments = new ArrayList<Tournament>();
 
     static {
-        tournaments.add(new Tournament("War at the Warehouse", "Sanford Airport"));
-        tournaments.add(new Tournament("Fighting Lion", "Central Florida Chrysler Jeep Dodge"));
+        tournaments.add(new Tournament("War at the Warehouse", "Sanford Airport", "/images/logos/war.jpg"));
+        tournaments.add(new Tournament("Fighting Lion", "Central Florida Chrysler Jeep Dodge", "/images/logos/lion.jpg"));
         tournaments.add(new Tournament("US Breaking Championships", "Central Florida Chrysler Jeep Dodge"));
         tournaments.add(new Tournament("Terracotta Challenge", "Northland Church"));
     }

@@ -1,41 +1,46 @@
-<zk xmlns="http://www.zkoss.org/2005/zul">
+<zk xmlns="http://www.zkoss.org/2005/zul" xmlns:c="client">
     <grid width="400px">
         <rows>
             <row>
-                <label value="First Name" width="150px"/>
-                <textbox value="@bind(vm.user.firstName)" constraint="no empty" width="150px"/>
+                <label value="First Name"/>
+                <textbox value="@bind(vm.user.firstName)" constraint="no empty" width="150px"
+                         c:onFocus="jq(this.$f('help1')).fadeIn()" c:onBlur="jq(this.$f('help1')).fadeOut()"/>
             </row>
             <row>
-                <label value="Last Name" width="150px"/>
+                <label value="Last Name"/>
                 <textbox value="@bind(vm.user.lastName)" constraint="no empty" width="150px"/>
             </row>
             <row>
-                <label value="DOB" width="150px"/>
+                <label value="DOB"/>
                 <datebox value="@bind(vm.user.dob)" format="MM/dd/yyyy" constraint="no future" width="150px"/>
             </row>
+            <row>
+                <label value="Email"/>
+                <textbox value="@bind(vm.user.email)" constraint="no empty" width="150px"/>
+            </row>
             <row spans="2">
-                <panel title="Home Address" height="100%" width="380px">
+                <panel title="Home Address" height="100%">
                     <panelchildren>
                         <grid>
                             <rows>
                                 <row>
-                                    <label value="Street" width="150px"/>
+                                    <label value="Street"/>
                                     <textbox value="@bind(vm.user.homeStreet)" constraint="no empty" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="Apt/Suite" width="150px"/>
+                                    <label value="Apt/Suite"/>
                                     <textbox value="@bind(vm.user.homeAptSuite)" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="City" width="150px"/>
+                                    <label value="City"/>
                                     <textbox value="@bind(vm.user.homeCity)" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="State" width="150px"/>
+                                    <label value="State"/>
                                     <textbox value="@bind(vm.user.homeState)" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="Zip" width="150px"/>
+                                    <label value="Zip"/>
                                     <textbox value="@bind(vm.user.homeZip)" constraint="no empty" width="150px"/>
                                 </row>
                                 <row spans="2">
@@ -48,32 +53,32 @@
                 </panel>
             </row>
             <row spans="2">
-                <panel visible="@load(!vm.user.homeSameAsBilling)" title="Billing Address" height="100%" width="380px">
+                <panel visible="@load(!vm.user.homeSameAsBilling)" title="Billing Address" height="100%">
                     <panelchildren>
                         <grid>
                             <rows>
                                 <row>
-                                    <label value="Name" width="150px"/>
+                                    <label value="Name"/>
                                     <textbox value="" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="Street" width="150px"/>
+                                    <label value="Street"/>
                                     <textbox value="" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="Apt/Suite" width="150px"/>
+                                    <label value="Apt/Suite"/>
                                     <textbox value="" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="City" width="150px"/>
+                                    <label value="City"/>
                                     <textbox value="" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="State" width="150px"/>
+                                    <label value="State"/>
                                     <textbox value="" width="150px"/>
                                 </row>
                                 <row>
-                                    <label value="Zip" width="150px"/>
+                                    <label value="Zip"/>
                                     <textbox value="" width="150px"/>
                                 </row>
                             </rows>
@@ -83,4 +88,6 @@
             </row>
         </rows>
     </grid>
+    <label id="help1" visible="false" width="150px"
+           value="Enter YOUR first name here, whether or not you are a competitor"/>
 </zk>

@@ -2,9 +2,7 @@ package cannon.register.service;
 
 import cannon.register.model.Competitor;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,6 +15,8 @@ public class CompetitorService {
 
     private static List<String> beltRanks = new ArrayList<String>();
     private static List<Competitor> competitors = new ArrayList<Competitor>();
+    private static Map<String, List<Competitor>> competitorsMap = new HashMap<String, List<Competitor>>();
+
 
     static {
         beltRanks.add("Novice");
@@ -29,6 +29,8 @@ public class CompetitorService {
         competitors.add(new Competitor("Hannah", "Cash", new Date(), "Beginner"));
         competitors.add(new Competitor("Elizabeth", "Cash", new Date(), "Beginner"));
         competitors.add(new Competitor("Rachel", "Cash", new Date(), "Novice"));
+
+        competitorsMap.put("lnac98@gmail.com", competitors);
     }
 
     public static Competitor createCompetitor(String firstName, String lastName, Date dob, String beltRank) {
@@ -44,6 +46,10 @@ public class CompetitorService {
 
     public static List<Competitor> getAllCompetitors() {
         return new ArrayList<Competitor>(competitors);
+    }
+
+    public static List<Competitor> getCompetitorsForUser(String email) {
+        return competitorsMap.get(email);
     }
 
     public static void deleteCompetitor(Competitor competitor) {
