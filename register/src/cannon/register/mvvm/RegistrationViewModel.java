@@ -34,9 +34,6 @@ public class RegistrationViewModel {
     private List<Competitor> registeredCompetitors = new ArrayList<Competitor>();
     private Competitor selectedCompetitor;
 
-    private Tournament newTournament;
-    private boolean stateAddTournament;
-
     private CardInfo cardInfo;
     private ChargeInfo chargeInfo;
     private boolean stateRegistering;
@@ -61,33 +58,8 @@ public class RegistrationViewModel {
     }
 
     @Command
-    @NotifyChange({"stateAddTournament", "tournaments", "selectedTournament"})
-    public void addTournamentForm() {
-        stateAddTournament = true;
-        newTournament = new Tournament();
-        tournaments.add(newTournament);
-        selectedTournament = newTournament;
-    }
-
-    @Command
-    @NotifyChange({"stateAddTournament"})
-    public void saveNewTournament() {
-        stateAddTournament = false;
-        newTournament = TournamentService.createTournament(newTournament.getName(), newTournament.getVenue(),
-                newTournament.getStartDate(), newTournament.getEndDate());
-    }
-
-    @Command
-    @NotifyChange({"tournaments", "selectedTournament"})
-    public void deleteTournament() {
-        TournamentService.deleteTournament(selectedTournament);
-        reloadTournament();
-    }
-
-    @Command
-    @NotifyChange({"stateAddTournament", "stateRegistering", "statePaying", "tournaments", "selectedTournaments"})
+    @NotifyChange({"stateRegistering", "statePaying", "tournaments", "selectedTournaments"})
     public void reloadTournament() {
-        stateAddTournament = false;
         stateRegistering = false;
         statePaying = false;
         tournaments = TournamentService.getAllTournaments();
@@ -211,14 +183,6 @@ public class RegistrationViewModel {
 
     public void setChargeInfo(ChargeInfo chargeInfo) {
         this.chargeInfo = chargeInfo;
-    }
-
-    public boolean isStateAddTournament() {
-        return stateAddTournament;
-    }
-
-    public void setStateAddTournament(boolean stateAddTournament) {
-        this.stateAddTournament = stateAddTournament;
     }
 
     public boolean isStateRegistering() {

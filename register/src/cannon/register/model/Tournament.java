@@ -105,10 +105,12 @@ public class Tournament {
     }
 
     public String getLogoPath() {
+        System.out.println("Returning " + logoPath);
         return logoPath;
     }
 
     public void setLogoPath(String logoPath) {
+        System.out.println("Setting " + logoPath);
         this.logoPath = logoPath;
     }
 }

@@ -1,0 +1,100 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk xmlns="http://www.zkoss.org/2005/zul" >
+    <panel sclass="cardSys" border="none">
+        <panelchildren>
+            <hlayout spacing="0" height="400px">
+                <listbox vflex="true" hflex="1"
+                         model="@load(vm.tournaments)" selectedItem="@bind(vm.selectedTournament)">
+                    <auxhead>
+                        <auxheader colspan="2">Tournament List</auxheader>
+                    </auxhead>
+                    <listhead>
+                        <listheader label="Title" width="200px" align="center" />
+                        <listheader label="Venue" align="center" />
+                        <listheader label="Start Date" width="120px" align="center" />
+                    </listhead>
+                    <template name="model" var="tournament">
+                        <listitem disabled="@load(vm.stateAddTournament)">
+                            <listcell label="@load(tournament.name)" />
+                            <listcell label="@load(tournament.venue)" />
+                            <listcell label="@load(tournament.startDate)" />
+                        </listitem>
+                    </template>
+                </listbox>
+                <window sclass="card-pre" title="Tournament Card" hflex="1" vflex="true" border="normal">
+                    <div sclass="card" align="center">
+                        <zscript deferred="true"><![CDATA[
+    import org.zkoss.util.media.Media;
+
+    Executions.getCurrent().getDesktop().setAttribute(
+            "org.zkoss.zul.Fileupload.target", uploadBtn);
+
+    public void processMedia(Media[] media) {
+        if (media != null) {
+            for (int i = 0; i < media.length; i++) {
+                if (media[i] instanceof org.zkoss.image.Image) {
+                    org.zkoss.image.Image img = (org.zkoss.image.Image) media[i];
+                    image.setContent(vm.saveLogo(img));
+                } else {
+                    Messagebox.show("Not an image: " + media[i], "Error",
+                            Messagebox.OK, Messagebox.ERROR);
+                    break; //not to show too many errors
+                }
+            }
+        }
+    }
+]]>
+                        </zscript>
+                        <vbox align="center">
+                            <image id="image" src="@bind(vm.selectedTournament.logoPath)" height="280px" onClick="win.doModal();"/>
+                            <button id="uploadBtn" label="Upload" onUpload="processMedia(event.getMedias());" onClick="Fileupload.get(-1);" />
+                        </vbox>
+                        <window id="win" title="@load(vm.selectedTournament.name)" closable="true" visible="false"
+                            onClose="self.visible=false; event.stopPropagation();" >
+                            <image src="@load(vm.selectedTournament.logoPath)"/>
+                        </window>
+                        <!--<vlayout sclass="title">-->
+                            <!--<label value="text1: " />-->
+                            <!--<textbox-->
+                                    <!--c:onFocus="jq(this.$f('help1')).fadeIn()"-->
+                                    <!--c:onBlur="jq(this.$f('help1')).fadeOut()"/>-->
+                            <!--<label id="help1" visible="false"-->
+                                   <!--value="This is help for text1." />-->
+                            <!--<label sclass="name" value="@load(vm.selectedTournament.name)" />-->
+                            <!--<hlayout sclass="dept">-->
+                                <!--Tournament-->
+                            <!--</hlayout>-->
+                        <!--</vlayout>-->
+
+                        <div sclass="number">
+                            Venue:
+                            <label value="@load(vm.selectedTournament.venue)"/>
+                        </div>
+                    </div>
+                </window>
+            </hlayout>
+        </panelchildren>
+    </panel>
+    <panel>
+        <panelchildren>
+            <listbox vflex="true" hflex="1"
+                     model="@load(vm.registeredCompetitors)" selectedItem="@bind(vm.selectedCompetitor)">
+                <auxhead>
+                    <auxheader colspan="3">Registered Competitors</auxheader>
+                </auxhead>
+                <listhead>
+                    <listheader label="Name" width="200px" align="center" />
+                    <listheader label="Belt Rank" width="200px" align="center" />
+                    <listheader label="Divisions" align="center" />
+                </listhead>
+                <template name="model" var="competitors">
+                    <listitem>
+                        <listcell label="@load(competitor.fullName)" />
+                        <listcell label="@load(competitor.beltRank)" />
+                        <listcell label="@load(vm.getDivisionsForCompetitor(competitor))" />
+                    </listitem>
+                </template>
+            </listbox>
+        </panelchildren>
+    </panel>
+</zk>

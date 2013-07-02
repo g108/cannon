@@ -7,28 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e80d475-13d6-4663-bff7-607af5e5fccb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/images/logos/lion.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/images/logos/war.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/src/cannon/register/model/CardInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/src/cannon/register/model/ChargeInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/common/template.zul" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/cpc/index.zul" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/cpc/paymentDialog.zul" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/cpc/registerDialog.zul" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/mvvm/TournamentViewModel.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/register/src/cannon/register/mvvm/TournamentViewModel.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/src/cannon/register/mvvm/TournamentViewModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/to/index.zul" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/to/main.zul" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/register/web/images/logos/lion.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/register/web/images/logos/war.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul" afterPath="$PROJECT_DIR$/register/web/pages/common/profileTab.zul" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/model/User.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/mvvm/PersonalViewModel.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/mvvm/PersonalViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/service/CompetitorService.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/service/CompetitorService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/service/UserService.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/index.zul" afterPath="$PROJECT_DIR$/register/web/index.zul" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/pages/cpc/main.zul" afterPath="$PROJECT_DIR$/register/web/pages/cpc/main.zul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul" afterPath="$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/pages/cpc/registerTab.zul" afterPath="$PROJECT_DIR$/register/web/pages/cpc/registerTab.zul" />
     </list>
     <list id="a3643502-9ba6-47c3-ac0f-6d30c40b7275" name="No Update" comment="" />
     <ignored path="Cannon.iws" />
@@ -87,11 +77,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registerTab.zul" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/registerTab.zul">
+      <file leaf-file-name="tournamentsTab.zul" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="121" selection-start="1661" selection-end="1661" vertical-scroll-proportion="-3.75">
-              <folding />
+            <state line="70" column="28" selection-start="3823" selection-end="3823" vertical-scroll-proportion="2.8532608">
+              <folding>
+                <marker date="1372797610000" expanded="true" signature="1383:1417" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,17 +91,19 @@
       <file leaf-file-name="clientSideEventHandling.zul" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register/web/pages/clientSideEventHandling.zul">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="43" selection-end="806" vertical-scroll-proportion="-0.625">
+            <state line="17" column="43" selection-start="745" selection-end="745" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tournament.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java">
+      <file leaf-file-name="TournamentViewModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register/src/cannon/register/mvvm/TournamentViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="43" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="91" column="31" selection-start="3098" selection-end="3098" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,52 +111,7 @@
       <file leaf-file-name="TournamentService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="52" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.zul" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register/web/index.zul">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="28" selection-start="91" selection-end="91" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.zul" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/main.zul">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="105" selection-start="336" selection-end="336" vertical-scroll-proportion="0.23498695">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.zul" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/index.zul">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="257" selection-end="257" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.zul" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register/web/pages/common/template.zul">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="29" selection-start="132" selection-end="132" vertical-scroll-proportion="-1.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profileTab.zul" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="84" selection-start="4504" selection-end="4504" vertical-scroll-proportion="-14.75">
+            <state line="21" column="93" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,7 +120,34 @@
       <file leaf-file-name="RegistrationViewModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="48" selection-start="5673" selection-end="5673" vertical-scroll-proportion="0.0">
+            <state line="35" column="4" selection-start="1155" selection-end="1194" vertical-scroll-proportion="-12.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tournament.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="21" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.zul" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register/web/pages/upload.zul">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="16" selection-start="178" selection-end="1893" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.zul" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register/web/pages/to/main.zul">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="22" selection-start="688" selection-end="759" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -198,22 +174,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" />
-        <option value="$PROJECT_DIR$/register/web/pages/cpc/registerDialog.zul" />
-        <option value="$PROJECT_DIR$/register/web/button.css.dsp" />
-        <option value="$PROJECT_DIR$/register/web/pages/window.css.dsp" />
-        <option value="$PROJECT_DIR$/register/web/pages/window.zul" />
-        <option value="$PROJECT_DIR$/register/web/pages/button.zul" />
-        <option value="$PROJECT_DIR$/register/web/style.css" />
-        <option value="$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java" />
-        <option value="$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java" />
-        <option value="$PROJECT_DIR$/register/web/pages/clientSideEventHandling.zul" />
         <option value="$PROJECT_DIR$/register/web/pages/cpc/registerTab.zul" />
         <option value="$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul" />
-        <option value="$PROJECT_DIR$/register/web/pages/cpc/main.zul" />
         <option value="$PROJECT_DIR$/register/web/index.zul" />
         <option value="$PROJECT_DIR$/register/web/pages/cpc/index.zul" />
+        <option value="$PROJECT_DIR$/register/web/pages/cpc/main.zul" />
+        <option value="$PROJECT_DIR$/register/web/pages/to/index.zul" />
         <option value="$PROJECT_DIR$/register/web/pages/common/template.zul" />
+        <option value="$PROJECT_DIR$/register/web/pages/upload.zul" />
+        <option value="$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java" />
+        <option value="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" />
+        <option value="$PROJECT_DIR$/register/web/pages/to/main.zul" />
+        <option value="$PROJECT_DIR$/register/src/cannon/register/mvvm/TournamentViewModel.java" />
+        <option value="$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java" />
+        <option value="$PROJECT_DIR$/register/web/pages/cpc/imagePopup.zul" />
+        <option value="$PROJECT_DIR$/register/web/pages/to/imagePopup.zul" />
+        <option value="$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul" />
       </list>
     </option>
   </component>
@@ -227,7 +203,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="801" />
+    <option name="height" value="798" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -442,6 +418,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="to" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cannon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -618,17 +616,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/register/web/pages/to" />
       <recent name="$PROJECT_DIR$/register/web/home" />
       <recent name="$PROJECT_DIR$/tutorial" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="cannon.register.mvc" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/register/web/pages/to" />
+      <recent name="$PROJECT_DIR$/register/web/pages/common" />
       <recent name="$PROJECT_DIR$/register/web/images/logos" />
       <recent name="$PROJECT_DIR$/register/web" />
       <recent name="$PROJECT_DIR$/register/web/pages/cpc" />
-      <recent name="$PROJECT_DIR$/tutorial/web/ch3" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cannon.register.mvc" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Cannon">
@@ -850,22 +850,27 @@
       <created>1372282023727</created>
       <updated>1372282023727</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented templates.">
+      <created>1372707786067</created>
+      <updated>1372707786067</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="801" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264402" sideWeight="0.49425286" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39912918" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32706222" sideWeight="0.5007184" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2349138" sideWeight="0.19202363" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32706222" sideWeight="0.49712643" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2349138" sideWeight="0.19202363" order="2" side_tool="true" content_ui="tabs" />
@@ -873,13 +878,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2349138" sideWeight="0.3397341" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2349138" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2617647" sideWeight="0.56681037" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2349138" sideWeight="0.6706056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26292467" sideWeight="0.56681037" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264402" sideWeight="0.49425286" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -921,7 +925,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Stripe libraries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented templates." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -938,6 +942,7 @@
     <MESSAGE value="ignoring workspace.xml" />
     <MESSAGE value="Reworked web page directory structure, added use od includes, added history tab, and changed tournaments to registration." />
     <MESSAGE value="Added Stripe libraries." />
+    <MESSAGE value="Implemented templates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -947,72 +952,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/register/web/button.css.dsp">
+    <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/index.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="7" selection-start="5727" selection-end="5727" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/window.zul">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="458" selection-end="458" vertical-scroll-proportion="-6.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial/web/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/button.zul">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="56" selection-start="102" selection-end="102" vertical-scroll-proportion="-0.625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="93" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="52" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="48" selection-start="5673" selection-end="5673" vertical-scroll-proportion="0.0">
+        <state line="4" column="40" selection-start="257" selection-end="257" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/clientSideEventHandling.zul">
+    <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/main.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="43" selection-end="806" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/register/web/WEB-INF/lib/zk.jar!/web/js/zk/widget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13445" selection-start="13443" selection-end="13445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/registerTab.zul">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="121" selection-start="1661" selection-end="1661" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="84" selection-start="4504" selection-end="4504" vertical-scroll-proportion="-14.75">
+        <state line="16" column="61" selection-start="872" selection-end="872" vertical-scroll-proportion="0.62663186">
           <folding />
         </state>
       </provider>
@@ -1024,24 +973,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/register/web/pages/to/index.zul">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="61" selection-start="248" selection-end="248" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/register/web/pages/common/template.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="132" selection-end="132" vertical-scroll-proportion="-1.25">
+        <state line="23" column="71" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-14.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/index.zul">
+    <entry file="file://$PROJECT_DIR$/register/web/pages/common/profileTab.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="257" selection-end="257" vertical-scroll-proportion="-2.5">
+        <state line="91" column="84" selection-start="4504" selection-end="4504" vertical-scroll-proportion="-36.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register/web/pages/cpc/main.zul">
+    <entry file="file://$PROJECT_DIR$/register/web/pages/upload.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="105" selection-start="336" selection-end="336" vertical-scroll-proportion="0.23498695">
+        <state line="6" column="16" selection-start="178" selection-end="1893" vertical-scroll-proportion="-3.75">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="4" selection-start="1155" selection-end="1194" vertical-scroll-proportion="-12.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/mvvm/TournamentViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="31" selection-start="3098" selection-end="3098" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="93" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/web/pages/clientSideEventHandling.zul">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="43" selection-start="745" selection-end="745" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/web/pages/to/main.zul">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="688" selection-end="759" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="21" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="28" selection-start="3823" selection-end="3823" vertical-scroll-proportion="2.8532608">
+          <folding>
+            <marker date="1372797610000" expanded="true" signature="1383:1417" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

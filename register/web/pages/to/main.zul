@@ -3,8 +3,7 @@
     <tabbox vflex="1" orient="vertical">
         <tabs id="tabs" width="100px">
             <tab id="profile" label="Profile"/>
-            <tab id="competitors" label="Competitors"/>
-            <tab id="register" label="Register"/>
+            <tab id="tournaments" label="Tournaments"/>
             <tab id="history" label="History"/>
         </tabs>
         <tabpanels>
@@ -13,12 +12,8 @@
                 <include src="/pages/common/profileTab.zul"/>
             </tabpanel>
             <tabpanel apply="org.zkoss.bind.BindComposer"
-                      viewModel="@id('vm') @init('cannon.register.mvvm.CompetitorViewModel')">
-                <include src="/pages/cpc/competitorsTab.zul"/>
-            </tabpanel>
-            <tabpanel apply="org.zkoss.bind.BindComposer"
-                      viewModel="@id('vm') @init('cannon.register.mvvm.RegistrationViewModel')">
-                <include src="/pages/cpc/registerTab.zul"/>
+                      viewModel="@id('vm') @init('cannon.register.mvvm.TournamentViewModel')">
+                <include src="/pages/to/tournamentsTab.zul"/>
             </tabpanel>
             <tabpanel>
                 <include src="/pages/cpc/historyTab.zul"/>
