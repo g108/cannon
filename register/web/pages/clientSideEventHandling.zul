@@ -1,0 +1,22 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <grid  xmlns:c="client">
+        <rows>
+            <row>
+                <label value="text1: " />
+                <textbox
+                        c:onFocus="jq(this.$f('help1')).fadeIn()"
+                        c:onBlur="jq(this.$f('help1')).fadeOut()"/>
+                <label id="help1" visible="false"
+                       value="This is help for text1." />
+            </row>
+            <row>
+                <label value="text2: " />
+                <textbox
+                        c:onFocus="jq(this.$f('help2')).fadeIn()"
+                        c:onBlur="jq(this.$f('help2')).fadeOut()"/>
+                <label id="help2" visible="false"
+                       value="This is help for text2." />
+            </row>
+        </rows>
+    </grid>
+</zk>

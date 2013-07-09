@@ -7,18 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e80d475-13d6-4663-bff7-607af5e5fccb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/src/cannon/register/mvvm/TournamentViewModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/to/index.zul" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/to/main.zul" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/register/web/images/logos/lion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/register/web/images/logos/war.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/register/web/pages/cpc/profileTab.zul" afterPath="$PROJECT_DIR$/register/web/pages/common/profileTab.zul" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/model/Tournament.class" afterPath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/model/Tournament.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/model/User.class" afterPath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/mvvm/PersonalViewModel.class" afterPath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/mvvm/PersonalViewModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/service/CompetitorService.class" afterPath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/service/CompetitorService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/service/UserService.class" afterPath="$PROJECT_DIR$/register/web/WEB-INF/classes/cannon/register/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/model/Tournament.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/mvvm/RegistrationViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java" afterPath="$PROJECT_DIR$/register/src/cannon/register/service/TournamentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register/web/pages/cpc/main.zul" afterPath="$PROJECT_DIR$/register/web/pages/cpc/main.zul" />
     </list>
     <list id="a3643502-9ba6-47c3-ac0f-6d30c40b7275" name="No Update" comment="" />
     <ignored path="Cannon.iws" />
@@ -80,7 +74,7 @@
       <file leaf-file-name="tournamentsTab.zul" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="28" selection-start="3823" selection-end="3823" vertical-scroll-proportion="2.8532608">
+            <state line="14" column="58" selection-start="803" selection-end="803" vertical-scroll-proportion="0.5706522">
               <folding>
                 <marker date="1372797610000" expanded="true" signature="1383:1417" placeholder="..." />
               </folding>
@@ -854,7 +848,11 @@
       <created>1372707786067</created>
       <updated>1372707786067</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented file upload and modal image dialog.">
+      <created>1372797670207</created>
+      <updated>1372797670207</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -925,7 +923,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented templates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented file upload and modal image dialog." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -943,6 +941,7 @@
     <MESSAGE value="Reworked web page directory structure, added use od includes, added history tab, and changed tournaments to registration." />
     <MESSAGE value="Added Stripe libraries." />
     <MESSAGE value="Implemented templates." />
+    <MESSAGE value="Implemented file upload and modal image dialog." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1047,7 +1046,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register/web/pages/to/tournamentsTab.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="28" selection-start="3823" selection-end="3823" vertical-scroll-proportion="2.8532608">
+        <state line="14" column="58" selection-start="803" selection-end="803" vertical-scroll-proportion="0.5706522">
           <folding>
             <marker date="1372797610000" expanded="true" signature="1383:1417" placeholder="..." />
           </folding>

@@ -1,0 +1,53 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk xmlns="http://www.zkoss.org/2005/zul" >
+
+    <panel>
+        <panelchildren>
+            <window>
+                <zscript deferred="true"><![CDATA[
+    import org.zkoss.util.media.Media;
+
+    Executions.getCurrent().getDesktop().setAttribute(
+            "org.zkoss.zul.Fileupload.target", uploadBtn);
+
+    public void processMedia(Media[] media) {
+        if (media != null) {
+            for (int i = 0; i < media.length; i++) {
+                if (media[i] instanceof org.zkoss.image.Image) {
+                    org.zkoss.image.Image img = (org.zkoss.image.Image) media[i];
+                    if (img.getWidth() > img.getHeight()){
+                                if (img.getHeight() > 300) {
+                                    image.setHeight("300px");
+                                    image.setWidth(img.getWidth() * 300 / img.getHeight() + "px");
+                                }
+                            }
+                            if (img.getHeight() > img.getWidth()){
+                                if (img.getWidth() > 400) {
+                                    image.setWidth("400px");
+                                    image.setHeight(img.getHeight() * 400 / img.getWidth() + "px");
+                                }
+                            }
+                            image.setContent(img);
+                } else {
+                    Messagebox.show("Not an image: " + media[i], "Error",
+                            Messagebox.OK, Messagebox.ERROR);
+                    break; //not to show too many errors
+                }
+            }
+        }
+    }
+]]></zscript>
+                <vbox>
+                    <button id="uploadBtn" label="Upload" onUpload="processMedia(event.getMedias());" onClick="Fileupload.get(-1);" />
+                    <image id="image" />
+                </vbox>
+                <div sclass="number">
+                    Venue:
+                    <label value="@load(vm.selectedTournament.venue)"/>
+                </div>
+            </window>
+
+        </panelchildren>
+    </panel>
+
+</zk>
